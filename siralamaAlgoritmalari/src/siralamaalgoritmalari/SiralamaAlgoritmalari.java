@@ -50,11 +50,11 @@ public class SiralamaAlgoritmalari {
 
         int mesafe = mesafeBelirleme(array.length);
         for (int i = mesafe; i > 0; i--) {
-            for (int j = 0; j < array.length - mesafe; j++) {
-                if (array[j] > array[j + mesafe]) {
+            for (int j = 0; j < array.length - i; j++) {
+                if (array[j] > array[j + i]) {
                     int tmp = array[j];
-                    array[j] = array[j + mesafe];
-                    array[j + mesafe] = array[j];
+                    array[j] = array[j + i];
+                    array[j + i] = array[j];
                 }
             }
         }
