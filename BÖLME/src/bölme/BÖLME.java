@@ -1,4 +1,4 @@
-// BÖLME İŞARETİ KULLANMADAN KULLANICI TARAFINDAN GİRİLEN İKİ DEĞERİ BÇLRN PROGRAM
+
 package bölme;
 
 import java.util.Scanner;
