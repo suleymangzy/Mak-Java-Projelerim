@@ -4,15 +4,18 @@ import java.util.Scanner;
 import java.util.Random;
 
 public class AltÜçgenMatris {
-
   
     public static void main(String[] args) {
-         Scanner input = new Scanner(System.in);
+        
+        Scanner input = new Scanner(System.in);
         Random rastgele = new Random();
+       
         System.out.println("satır ve sütun sayısını giriniz");
         int n = input.nextInt();
+        
         int[][] a = new int[n][n];
         int[][] b = new int[n][n];
+       
         for (int i = 0; i < n; i++) {
             for (int j = 0; j < n; j++) {
                 a[i][j] = rastgele.nextInt(100);
@@ -25,14 +28,18 @@ public class AltÜçgenMatris {
 
             }
         }
-        System.out.print("a iki boyutlu dizisi: ");
+       
+        System.out.print("A matrisi: ");
         for (int i = 0; i < n; i++) {
             for (int j = 0; j < n; j++) {
                 System.out.print(a[i][j] + ",");
             }
+          System.out.println(" ");
         }
+       
         System.out.println(" ");
-        System.out.print("b iki boyutlu dizisi: ");
+       
+        System.out.print("B matrisi: ");
         for (int i = 0; i < n; i++) {
             for (int j = 0; j < n; j++) {
                 System.out.print(b[i][j] + ",");
