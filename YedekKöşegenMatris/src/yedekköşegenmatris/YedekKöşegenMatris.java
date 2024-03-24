@@ -15,7 +15,7 @@ public class YedekKöşegenMatris {
         for (int i = 0; i < n; i++) {
             for (int j = 0; j < n; j++) {
                 a[i][j] = rst.nextInt(100);
-                if (i + j < n - 1) {
+                if (i+j == i*2) {
                     t += a[i][j];
                 }
             }
@@ -25,6 +25,7 @@ public class YedekKöşegenMatris {
             for (int j = 0; j < n; j++) {
                 System.out.print(a[i][j] + ",");
             }
+            System.out.println(" ");
         }
         System.out.println("");
         System.out.println("toplam: "+t);
